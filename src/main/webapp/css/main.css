@@ -1,0 +1,291 @@
+textarea {
+	min-height: 150px;
+	min-width: 200px;
+	border-radius: 5px;
+}
+
+#leftbar {
+	width:60px;
+	background-color:#333;
+	height:100%;
+	position:fixed;
+	z-index:500;
+}
+
+h4 {
+	font-weight:bold;	
+}
+
+#leftbar a {
+	width:60px;
+	color:white;
+	width:60px;
+	text-align:center;
+}
+
+div#reportDiv
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+div#reportDiv > iframe
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#leftbar a:hover, a.fa-stack:hover>.fa-circle {
+	color:orange;
+}
+
+a.fa, a.fa-stack>i {
+	text-decoration:none;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+a.fa:hover, a.fa-stack:hover>i {
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	transform:scale(1.2);
+}
+
+#leftbar .list-group-item {
+	background-color:#333;
+	border:0px;
+	padding-left:0px;
+	border-bottom:1px solid white;
+	border-bottom-right-radius:0px;
+	border-bottom-left-radius:0px;
+}
+
+#search {
+	height:50px;
+	position:fixed;
+	width:100%;
+	padding-left:80px;
+	background-color:#f5f5f5;
+	z-index:400;
+	box-shadow: 0px 6px 6px #aaa;
+}
+
+#searchForm {
+	display:inline;
+}
+
+#searchForm input {
+	border:0px;
+	display:inline;
+	font:20px 'Courier New',Terminal,monospace;
+	width:95%;
+	background-color:#f5f5f5;
+	height:50px;
+}
+
+#searchForm input:focus {
+	box-shadow:none;
+}
+
+#search span {
+	font:20px Menlo,'Courier New',Terminal,monospace;
+	color:gray;
+	display:inline;
+	-webkit-font-smoothing:initial;
+}
+
+body {
+	font:15px;
+}
+
+th.header.headerSortUp {
+	background-image: url(../img/desc.gif);
+	background-color: rgb(158,202,225);
+}
+
+th.header.headerSortDown {
+	background-image: url(../img/asc.gif);
+	background-color: rgb(158,202,225);
+}
+
+th.header {
+	background-color: rgb(107,174,214);
+	font-weight: bold;
+	cursor: pointer; 
+	padding-left: 10px; 
+    border-right: 1px solid #dad9c7; 
+    margin-left: -1px; 
+	background-repeat: no-repeat; 
+    background-position: center right; 
+	background-image: url(../img/unsorted.gif)
+}
+
+.status-label {
+	float:left;
+	width:75px;
+	margin-right:10px;
+	cursor:default;
+}
+
+.project-list th {
+	width: 16%
+}
+
+.contained {
+	margin: 15px 10px 15px 10px;
+	padding: 15px 5px 15px 10px;
+	border-radius: 10px;
+	border-width: 1px;
+	border-color: #888;
+	border-style: solid;
+}
+
+.contained h3 {
+	margin-top: 5px;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.error
+{
+	font-weight: bold;
+	color: red;
+}
+
+p > button {
+	margin-top: 15px;
+}
+
+.inputLabel {
+	display: block;
+	margin-top: 10px;
+}
+
+ul.tabs {
+	border-bottom: 1px solid #333;
+	font-size: 18px;
+}
+
+ul.tabs li {
+	display: inline-block;
+	padding: 12px 30px 12px 30px;
+	border: 1px solid #333;
+	border-radius: 5px 5px 0 0;
+	background-color: #7dca7d;
+	font-weight: bold;
+	margin-bottom: -1px;
+	cursor: pointer;
+}
+
+ul.tabs li a {
+	color: #fff;
+}
+
+ul.tabs li a:hover {
+	text-decoration: none;
+}
+
+ul.tabs li.active {
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+ul.tabs li.active a {
+	color: #333;
+}
+
+ul.nobullets {
+	list-style: none;
+}
+
+@MEDIA only screen and (max-width: 800px) {
+	ul.tabs {
+		border: 0;
+		font-size: 18px;
+	}
+	
+	ul.tabs li {
+		display: inline-block;
+		padding: 12px 30px 12px 30px;
+		border: 1px solid #333;
+		border-radius: 5px;
+		background-color: #ccc;
+		font-weight: bold;
+	}
+	
+	ul.tabs li.active {
+		border: 1px solid #333;
+		background-color: #fff;
+	}
+	
+}
+
+.hasAjaxLoader {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.ajaxLoader {
+	position: absolute;
+	top: 10px;
+	left: 45%;
+}
+
+.btn-xs > .ajaxLoader {
+	top: 2px;
+}
+	
+.inline {
+	display: inline-block;
+	line-height: inherit;
+}
+
+.inline-alert {
+	padding: 8px 15px 8px 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.modal-dialog {
+	    margin: 30px auto;
+	    width: 750px;
+	}
+	.modal-content {
+	    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	}
+}
+
+table.displayTable {
+	margin-top:15px;
+}
+
+table.displayTable > thead {
+	background-color: #333;
+	color: white;
+}
+
+.inprogress-label {
+	background-color: #3276b1;
+}
+
+.success-label {
+	background-color: #128327;
+}
+
+.failure-label {
+	background-color: #BD3F42;
+}

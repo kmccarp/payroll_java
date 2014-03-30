@@ -1,0 +1,28 @@
+{
+  "name": "Open Payroll",
+  "version": "0.1.0",
+  "authors": [
+    "Kevin Carpenter <kwcarpenter@gmail.com>"
+  ],
+  "description": "Open Source Payroll Application",
+  "main": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "twitter": "latest",
+    "jquery": "latest",
+    "jquery.tablesorter": "latest",
+    "moment": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "d3": "latest",
+    "restangular": "latest",
+    "font-awesome": "latest"
+  }
+}
