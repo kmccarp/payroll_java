@@ -7,4 +7,6 @@ import com.waffle.openpayroll.domain.User;
 public interface UserDAO extends CrudRepository<User, Long>{
 	@Override
 	public Iterable<User> findAll();
+	
+	public User findByUsername(String username);
 }
