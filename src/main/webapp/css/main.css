@@ -1,3 +1,7 @@
+.container {
+	margin: 25px 0px 0px 15px;
+}
+
 textarea {
 	min-height: 150px;
 	min-width: 200px;
