@@ -1,23 +1,26 @@
 package com.waffle.openpayroll;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
-@Controller
 @EnableAutoConfiguration
+@ComponentScan(basePackages="com.waffle")
+@Controller
 public class Server {
 
-    @RequestMapping("/")
-    @ResponseBody
-    public ModelAndView index() {
-        return new ModelAndView("index");
-    }
-
+	@RequestMapping("/op")
+	@ResponseBody
+	public String op() {
+		return "Hi";
+	}
+	
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(Server.class, args);
+    	SpringApplication app = new SpringApplication(Server.class);
+    	app.setShowBanner(false);
+    	app.run(args);
     }
 
 }
