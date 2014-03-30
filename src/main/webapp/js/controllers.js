@@ -1,7 +1,7 @@
 var controllers = angular.module('controllers', [])
 
-controllers.controller('MainCtrl', function($scope) {
-	console.log('hit main controller')
+controllers.controller('MainCtrl', function($scope, Restangular) {
+//	Restangular.one('')
 })
 
 controllers.controller('TimesheetCtrl', function($scope, Restangular) {
