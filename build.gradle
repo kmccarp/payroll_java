@@ -14,17 +14,26 @@ repositories {
 	maven {
 		url 'http://repo.spring.io/milestone'
 	}
+	maven {
+		url 'https://oss.sonatype.org/content/repositories/snapshots/'
+	}
+	flatDir {
+		dirs 'lib'
+	}
 }
 
 dependencies {
+	compile ':pappus-graph-projection:0.1.4-SNAPSHOT'
+	compile 'com.google.guava:guava:+'
 	compile 'joda-time:joda-time:+'
 	compile 'org.springframework.boot:spring-boot-starter-web:1.0.0.RC5'
 	compile 'org.codehaus.groovy:groovy-all:+'
-	compile 'org.hibernate:hibernate-core:4.3.4.Final'
-	compile 'mysql:mysql-connector-java:5.1.30'
-//	compile("com.h2database:h2:+")
-	compile 'org.springframework.boot:spring-boot-starter-data-jpa:+'
+	compile 'org.neo4j:neo4j:2.0.1'
+	compile 'org.jibx:jibx-tools:+'
+	compile 'com.tinkerpop.gremlin:gremlin-groovy:+'
+	compile 'com.tinkerpop.blueprints:blueprints-neo4j2-graph:2.5.0-SNAPSHOT'
 	compile 'javax.inject:javax.inject:+'
+	compile 'org.joda:joda-money:0.9.1'
     testCompile 'junit:junit:+'
 }
 

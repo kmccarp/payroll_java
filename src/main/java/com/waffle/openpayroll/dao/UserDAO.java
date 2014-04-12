@@ -1,12 +1,5 @@
 package com.waffle.openpayroll.dao;
 
-import org.springframework.data.repository.CrudRepository;
+public interface UserDAO extends UserSearchDAO, UserUpdateDAO {
 
-import com.waffle.openpayroll.domain.User;
-
-public interface UserDAO extends CrudRepository<User, Long>{
-	@Override
-	public Iterable<User> findAll();
-	
-	public User findByUsername(String username);
 }

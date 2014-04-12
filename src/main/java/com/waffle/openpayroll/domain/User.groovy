@@ -1,24 +1,11 @@
 package com.waffle.openpayroll.domain
 
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import groovy.transform.EqualsAndHashCode
+import groovy.transform.ToString
 
-@Entity
-@Table(name="Employee")
+@ToString
+@EqualsAndHashCode
 class User {
-	
-	@Id
-	@GeneratedValue
-	long id
-	
-	@UniqueConstraint(columnNames="username")
-	@Column(nullable = false)
 	String username
-	
-	@Column(nullable = false)
 	String password
 }
